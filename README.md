@@ -1,7 +1,7 @@
 ### Hi there 👋
 
-🇲🇽 🕊️
-Local cryptid programmer
+🇲🇽 🕊️<br>
+Local cryptid programmer<br>
 ISC UCC
 
 <!--
