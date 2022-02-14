@@ -1,4 +1,4 @@
-### Hi there 👋
+### 'Sup 👋
 
 🇲🇽 🕊️<br>
 Local cryptid programmer<br>
