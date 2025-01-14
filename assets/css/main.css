@@ -4,6 +4,9 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
+	background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a:hover {
@@ -262,33 +265,63 @@ pre {
 /* Dark Mode Toggle */
 
 .toggle {
-	width: 60px;
-	height: 30px;
-	background-color: #333;
-	border-radius: 30px;
-	position: relative;
-	cursor: pointer;
-	transition: background-color 0.3s;
+    width: 60px;
+    height: 30px;
+    background-color: #bbb;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .toggle::before {
-	content: "";
-	width: 22px;
-	height: 22px;
-	background-color: white;
-	border-radius: 50%;
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	transition: transform 0.3s;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: transform 0.3s;
 }
 
-.toggle.dark {
-	background-color: #bbb;
+.toggle.light {
+    background-color: #bbb;
 }
 
-.toggle.dark::before {
-	transform: translateX(30px);
+.toggle.light::before {
+    transform: translateX(30px);
+}
+
+/* Icon styles */
+.toggle i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #333;
+    transition: opacity 0.3s ease;
+}
+
+/* Initially, show the moon and hide the sun */
+.fa-moon-o {
+    left: 8px;
+    opacity: 1;
+}
+
+.fa-sun-o {
+    right: -2px;
+    opacity: 0;
+}
+
+/* On light mode, show the sun and hide the moon */
+.toggle.light .fa-moon-o {
+    opacity: 0;
+}
+
+.toggle.light .fa-sun-o {
+    opacity: 1;
 }
 
 /* Pop up image resize */
@@ -708,6 +741,8 @@ button[disabled], html input[disabled] {
 			height: auto;
 			top: 15px;
 			padding: 30px;
+			filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(258deg) brightness(107%) contrast(105%);
+			transition: filter 0.3s ease;
 		}
 
 		.nav-bars i {
