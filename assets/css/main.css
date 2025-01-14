@@ -364,7 +364,7 @@ pre {
 				.header .logo .symbol img {
 					display: block;
 					width: 3.2em;
-					height: 2.5em;
+					height: 3.2em;
 				}
 
 
@@ -975,16 +975,16 @@ li.social-icons {
     text-align: center;
 }
 .popup-socials-icons a {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 4px solid #fff;
     /* background: #6DBEC2; */
-    background-color: #49C1DC;
+    background-color: #4a9fb3;
     float: left;
     color: white;
     padding-top: 3px;
-    font-size: 20px;
+    font-size: 100px;
 }
 .popup-social-contact li {
     list-style: none;
