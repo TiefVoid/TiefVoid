@@ -850,16 +850,19 @@ button[disabled], html input[disabled] {
   width: auto;
   max-width: 1150px;
   margin: 0px auto;
+  transition: background-color 0.3s ease;
 }
 .popup-head {
 	margin-top: 50px;
     margin-bottom: 35px;
     margin-left: 15px;
 	color: #fff;
+	transition: color 0.3s ease;
 }
 .popup-parapraph {
 	padding: 0px 15px;
 	color: #fff;
+	transition: color 0.3s ease;
 }
 
 .white-popup.light-mode {
