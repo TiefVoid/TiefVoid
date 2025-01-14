@@ -845,7 +845,7 @@ button[disabled], html input[disabled] {
 /*---------------------------popup----------------------------*/
 .white-popup {
   position: relative;
-  background-color: #FFF;
+  background-color: #333;
   padding: 0px;
   width: auto;
   max-width: 1150px;
@@ -855,10 +855,21 @@ button[disabled], html input[disabled] {
 	margin-top: 50px;
     margin-bottom: 35px;
     margin-left: 15px;
+	color: #fff;
 }
 .popup-parapraph {
 	padding: 0px 15px;
+	color: #fff;
 }
+
+.white-popup.light-mode {
+	background-color: #e4e4e4;
+}
+.white-popup.light-mode .popup-head,
+.white-popup.light-mode .popup-parapraph {
+	color: #333;
+}
+
 .pop-up-icon {
 	padding: 20px 20px;
 }
