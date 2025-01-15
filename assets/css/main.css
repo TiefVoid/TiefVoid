@@ -798,16 +798,16 @@ button[disabled], html input[disabled] {
 	opacity: 0;
 }
 .a a .img-hover.glass {
-    background: #ea766a;
+    background: #84ad96;
 }
 .a a .img-hover.shoes-glass {
-    background: #a0c4a3;
+    background: #e3e4a8;
 }
 .a a .img-hover.hand-parts {
-    background: #da9dd9;
+    background: #9c2448;
 }
 .a a .img-hover.table-with-phone {
-    background: #6da178;
+    background: #9c2448;
 }
 .a a .img-hover.orange-shoe {
     background: #da9567;
@@ -919,7 +919,8 @@ li.popup-socials-icons {
 				color: #ffffff;
 			}
 .pop-up-color {
-	background-color: #fff;
+	background-color: #333;
+	transition: background-color 0.3s ease;
 }
 
 .pop-up-color img {
